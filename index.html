@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Conversor Binário para Decimal</h1>
+    <div class="flex-box">
+        
+        <div id="alert">
+            <span id="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Número não permitido.
+        </div>
+
+        <div class="box">
+            <label class="labelB"for="binary">Binário</label>
+            <input type="number" id="binary">
+            <label class="labelC"for="result">Decimal</label>
+            <button id="converter">Converter</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+</body>
+<footer>Desenvolvido por <a href="http://linkedin.com/in/robsonrosajr">Robson Rosa</a></footer>
+<script src="./script.js"></script>
+
+</html>

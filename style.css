@@ -1,0 +1,156 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    color:rgb(22, 22, 22)
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+    margin: 0;
+    padding: 0;
+    height: 100vh;    
+}
+
+div.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    margin-bottom: 0;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 0;
+    margin-top: 0;
+    background-color: #097FCB;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+footer {
+    position: absolute;
+    height: 30px;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color:#097FCB;
+    color: #fff
+
+}
+
+footer a {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: rgb(22, 22, 22);
+}
+
+.result {
+    background-color: #fff;
+    border-radius: 10px;    
+    grid-area: result;
+}
+
+.box {
+    position: relative;
+    display: grid;
+    width: 600px;
+    height: 200px;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #097FCB;
+    box-shadow: 3px 0px 0px 0px rgba(111, 111, 111, 0.652);
+    font-size: 30px;
+    grid-template-areas: 
+        "labelB input"
+        "labelC result"
+        "btn btn";
+
+    border-radius: 10px 10px 10px 10px;
+}
+
+.labelB {
+    grid-area: labelB;
+}
+
+.labelC {
+    grid-area: labelC;
+}
+
+#binary {
+    font-size: 30px;
+    border: none;
+    background-color: #EEE ;
+    border-radius: 0px 10px 0px 0px;
+    grid-area: input;
+}
+
+#converter {
+    position: absolute;
+    bottom: 0;
+    border: 0;
+    padding: 0;
+    background-color: #FF8E00;
+    border: solid 1px #F58900;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 0px 0px rgba(111, 111, 111, 0.652);
+    width: 600px;
+    height: 50px;
+    font-size: 35px;
+    grid-area: btn;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+#converter:active{
+    box-shadow: none;
+}
+
+#converter:hover {
+    background-color: #F2003D;
+    border: #F2003D;
+    color: #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield; 
+ }
+
+ #alert {
+     display: none;
+    background-color: #f44336;
+    padding: 20px;
+    color: #EEE;
+    margin-bottom: 5px;
+    width: 600px;
+    box-sizing: border-box;
+    border-radius: 10px;
+ }
+
+
+ #close-btn {
+     float: right;
+     padding-left: 10px;
+     font-weight: bold;
+     font-size: 22px;
+     line-height: 20px;
+     color: #EEE;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ #close-btn:hover {
+     color: black;
+ }
