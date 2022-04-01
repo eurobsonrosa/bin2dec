@@ -154,3 +154,21 @@ input[type=number] {
  #close-btn:hover {
      color: black;
  }
+
+ @media(max-width: 576px){
+
+     html{
+         height: 100vh;
+     }
+    .box {
+        width: 300px;
+    }
+
+    #alert{
+        width: 300px;
+    }
+
+    #converter {
+        width: 300px
+    }
+}
