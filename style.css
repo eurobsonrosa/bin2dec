@@ -22,7 +22,7 @@ div.flex-box {
 
 h1 {
     padding: 0;
-    margin-top: 0;
+    margin: 0;
     background-color: #097FCB;
     font-size: 1.5em;
     text-align: center;
@@ -157,9 +157,6 @@ input[type=number] {
 
  @media(max-width: 576px){
 
-     html{
-         height: 100vh;
-     }
     .box {
         width: 300px;
     }
